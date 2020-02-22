@@ -1,9 +1,21 @@
 @charset "UTF-8";
 
-.container{
-	width: 85%;
 
-}
+/*--- Grid ---*/
+.col1{width:6.80%;}
+.col2{width:15.27%;}
+.col3{width:23.75%;}
+.col4{width:32.22%;}
+.col5{width:40.69%;}
+.col6{width:49.16%;}
+.col7{width:57.63%;}
+.col8{width:66.11%;}
+.col9{width:74.58%;}
+.col10{width:83.05%;}
+.col11{width:91.52%;}
+.col12{width:100%;}
+
+/*--- Normal Setting ---*/
 .p-2{
 	padding: 24px 12px 24px 12px;
 }
@@ -15,13 +27,17 @@
 	margin-top: 48px;
 	margin-bottom: 48px;
 }
-.d-flex{
-	display: flex;
+.my-1{
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
+.textCenter{text-align: center;}
+
+/*--- Flex ---*/
+.d-flex{display: flex;}
 .fustify-content-around{
 	justify-content:space-around;
 }
-.textCenter{
-	text-align: center;
-}
+
+
 
