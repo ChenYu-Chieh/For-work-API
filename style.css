@@ -15,6 +15,8 @@
 .col11{width:91.52%;}
 .col12{width:100%;}
 
+.container{width:85%;margin:0 auto;}
+
 /*--- Normal Setting ---*/
 .p-2{
 	padding: 24px 12px 24px 12px;
@@ -35,8 +37,12 @@
 
 /*--- Flex ---*/
 .d-flex{display: flex;}
-.fustify-content-around{
-	justify-content:space-around;
+.fustify-content-around{justify-content:space-around;}
+.flexwrap{flex-wrap: wrap;}
+
+/*--- Index ---*/
+div#test>section{
+	background-color: #e6e6e6;
 }
 
 
