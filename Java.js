@@ -1,5 +1,7 @@
-$(document).ready(function()){
+$(document).ready(function(){
 
-	$('p').console.log
+	$('#header').css({'background-color':'lightblue','color':'white','font-size':'24px'});
 
-};
+	$ajax()
+
+});
