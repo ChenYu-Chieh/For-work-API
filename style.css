@@ -44,6 +44,9 @@
 div#test>section{
 	background-color: #e6e6e6;
 }
+#test>section>button[type="button"] {
+	cursor: pointer;
+}
 
 
 
