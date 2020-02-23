@@ -10,7 +10,7 @@ $(document).ready(function(){
 
 	$.ajax({
 		
-		url:'https://www.googleapis.com/youtube/v3/videos?part=snippet,contentDetails&chart=mostPopular&maxResults=3&key=AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU',
+		url:'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=12&key=AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU',
 		type:'Get',
 		dataType: 'json',
   		success: function(data){
