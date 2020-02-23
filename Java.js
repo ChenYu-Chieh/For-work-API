@@ -8,12 +8,19 @@ $(document).ready(function(){
 	});
 
 	$.ajax({
-		curl: 'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=12&key=[AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU]'+'Authorization: Bearer [YOUR_ACCESS_TOKEN]'+'Accept: application/json' ,
+		
+		url :
+  		'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=12&key=[AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU]'+
+  		'Authorization: Bearer [YOUR_ACCESS_TOKEN]'+
+  		'Accept: application/json',
+  		
+		// url: 'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=12&key=[AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU]'+ 
+		// 'Authorization: Bearer [YOUR_ACCESS_TOKEN]' + 
+		// 'Accept: application/json' ,
 
   		dataType: 'json',
   		success: function(data){
     	console.log('這是抓下來的資料: ',data);
-
 
     	// var email = data.results[0].email;
     	// var gender = data.results[0].gender;
