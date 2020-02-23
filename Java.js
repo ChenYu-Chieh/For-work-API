@@ -22,7 +22,11 @@ $(document).ready(function(){
     	// 	console.log(email);
     	// 	$('#test').append(email);
     	// 	console.log(gender);
+    	var img1, img2, img3, img4, img5;
+    	var img1 = data.Object.items[0].snippet.thumbnails.standard;
+    	$('#img1').attr(img1);
  		}
+
 	});
 	
 
