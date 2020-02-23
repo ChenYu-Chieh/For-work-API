@@ -18,22 +18,27 @@
 .container{width:85%;margin:0 auto;}
 
 /*--- Normal Setting ---*/
+.p-1{
+	padding: 1rem 0.5rem 1rem 0.5rem; 
+}
 .p-2{
 	padding: 24px 12px 24px 12px;
 }
 .my-5{
-	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-top: 80px auto 80px auto;
 }
 .my-3{
-	margin-top: 48px;
-	margin-bottom: 48px;
+	margin: 48px auto 48px auto;
+}
+.my-2{
+	margin: 32px auto 32px auto;
 }
 .my-1{
-	margin-top: 16px;
-	margin-bottom: 16px;
+	margin: 16px auto 16px auto;
 }
 .textCenter{text-align: center;}
+.textWhite{color: white;}
+
 
 /*--- Flex ---*/
 .d-flex{display: flex;}
@@ -41,12 +46,63 @@
 .flexwrap{flex-wrap: wrap;}
 
 /*--- Index ---*/
+#header{
+	background-color: lightblue;
+	color: white;
+	font-size: 24px;
+}
 div#test>section{
 	background-color: #e6e6e6;
 }
-#test>section>button[type="button"] {
+div#test>section>div{
+	background-color: white;
+}
+#test>section>div>button[type="button"] {
 	cursor: pointer;
 }
 
 
+/*---       RWD自適應       ---*/
+/*--- Phone Landscape Style ---*/
+@media screen and (min-width: 576px){
+	
+	/*影片區*/
+	div#test{
+		width:90%;margin:0 auto;
+	}
+	div#test>section{
+		width:49.16%;
+		margin: 16px auto 16px auto;
+	}
+}
 
+/*--- Pad Portrait Style ---*/
+@media screen and (min-width: 768px){
+	
+	/*影片區*/
+	
+	div#test>section{
+		margin: 32px auto 32px auto;
+	}
+}
+
+/*--- Pad Landscape Style ---*/
+@media screen and (min-width: 992px){
+	
+	/*影片區*/
+	div#test>section{
+		width:32.22%;
+	}
+
+}
+
+/*--- PC Style ---*/
+@media screen and (min-width: 1281px){
+	
+	/*影片區*/
+	div#test>section{
+		background-color: #e6e6e6;
+		width:23.75%;
+	}
+
+}

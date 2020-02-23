@@ -1,11 +1,12 @@
 $(document).ready(function(){
 	
 	//console.log('helloworld');
-	$('#header').find('div').css({
-		'background-color':'lightblue',
-		'color':'white',
-		'font-size':'24px'
-	});
+	// $('#header').find('div').css({
+	// 	'background-color':'lightblue',
+	// 	'color':'white',
+	// 	'font-size':'24px',
+	// 	'background-size':'100%'
+	// });
 
 	$.ajax({
 		
@@ -13,7 +14,7 @@ $(document).ready(function(){
 
 		'Authorization: Bearer [YOUR_ACCESS_TOKEN]' +
 		'Accept: application/json' ,
-		
+
 		dataType: 'json',
   		success: function(data){
     	console.log('這是抓下來的資料: ',data);
