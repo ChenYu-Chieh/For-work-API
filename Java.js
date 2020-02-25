@@ -22,7 +22,7 @@ $(document).ready(function(){
     	// 	console.log(email);
     	// 	$('#test').append(email);
     	// 	console.log(gender);
-    	var title1 = data.items[0].snippet.title;
+    	let title1 = data.items[0].snippet.title;
     	console.log(title1);
  		$("#title1").html(title1.responseText);
 		}
