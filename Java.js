@@ -25,19 +25,21 @@ $(document).ready(function(){
     	// 	$('#test').append(email);
     	// 	console.log(gender);
     	
-    	var dataItem = data.item[i];
+    	var dataItems = data.items;
     	
-    	for( i = 0; i < dataItem.length; i++){
-    		var myVedio = $('#vedio');
-    		var mytimeCode = $('#timeCode');
-    		var mytitle = $('#title');
-    		var myViewCount = $('#viewCount');
+    		for( i = 0; i < dataItems.length; i++){
+	    		var myVedio = $('#vedio');
+	    		var myTimeCode = $('#timeCode');
+	    		var myTitle = $('#title');
+	    		var myViewCount = $('#viewCount');
+	    		var myPublishedAt = $('publishedAt');
 
-    		myvedio.val(data.items[i].id);
-    		mytimeCode.text(data.items[i].contentDetails.duration);
-    		mytilte.text(data.items[i].snippet.title);
-    		myViewCount.text(data.items[i].statistics.viewCount);
-    	}
+	    		myVedio.val(data.items[i].id);
+	    		myTimeCode.text('時長: ' + data.items[i].contentDetails.duration);
+	    		myTitle.text(data.items[i].snippet.title);
+	    		myViewCount.text('觀看人次: '+ data.items[i].statistics.viewCount);
+	    		myPublishedAt.text(data.items[i].snippet.publishedAt);
+    		}
     	
     	//var title1 = data.items[0].snippet.title;
     	//console.log(title1);
