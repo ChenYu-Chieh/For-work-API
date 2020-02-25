@@ -24,7 +24,7 @@ $(document).ready(function(){
     	// 	console.log(gender);
     	var title1 = data.items[0].snippet.title;
     	console.log(title1);
- 		$("section:first div h3").text(title1);
+ 		$("section:first div h3").html(title1.responseText);
 		}
 
 
