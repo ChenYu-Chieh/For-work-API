@@ -10,10 +10,12 @@ $(document).ready(function(){
 
 	$.ajax({
 		
-		url:'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=12&key=AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU',
+		//url:'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=Ks-_Mh1QhMc%2Cc0KYU2j0TM4%2CeIho2S0ZahI&maxResults=12&key=AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU',
+		url:'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=12&key=AIzaSyBfWFKkPVwJcR5LrA-g5_tuwMdIBmP_LzU',
 		type:'Get',
 		dataType: 'json',
   		success: function(data){
+
     	console.log('這是抓下來的資料: ',data);
 
     	// var email = data.results[0].email;
@@ -22,11 +24,13 @@ $(document).ready(function(){
     	// 	console.log(email);
     	// 	$('#test').append(email);
     	// 	console.log(gender);
-
-    	let title1 = data.items[0].snippet.title;
+    	//var 
+    	//for( i = 0; i < )
+    	var title1 = data.items[0].snippet.title;
     	console.log(title1);
+    	
  		
- 		document.getElementById("#title1").innerHTML = title1;
+ 		$("#title1").text(title1);//成功取到JSON
 		}
 
 
