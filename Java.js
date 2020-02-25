@@ -24,13 +24,26 @@ $(document).ready(function(){
     	// 	console.log(email);
     	// 	$('#test').append(email);
     	// 	console.log(gender);
-    	//var 
-    	//for( i = 0; i < )
-    	var title1 = data.items[0].snippet.title;
-    	console.log(title1);
     	
- 		
- 		$("#title1").text(title1);//成功取到JSON
+    	var dataItem = data.item[i];
+    	
+    	for( i = 0; i < dataItem.length; i++){
+    		var myVedio = $('#vedio');
+    		var mytimeCode = $('#timeCode');
+    		var mytitle = $('#title');
+    		var myViewCount = $('#viewCount');
+
+    		myvedio.val(data.items[i].id);
+    		mytimeCode.text(data.items[i].contentDetails.duration);
+    		mytilte.text(data.items[i].snippet.title);
+    		myViewCount.text(data.items[i].statistics.viewCount);
+    	}
+    	
+    	//var title1 = data.items[0].snippet.title;
+    	//console.log(title1);
+    	
+ 		//成功取到JSON
+ 		//$("#title1").text(title1);
 		}
 
 
