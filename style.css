@@ -57,10 +57,10 @@ div#test>section{
 div#test>section>div{
 	background-color: white;
 }
-#test>section>div>button[type="button"] {
+#test>section div>button{
 	cursor: pointer;
 }
-/*s*/
+
 
 
 /*---       RWD自適應       ---*/
