@@ -53,6 +53,7 @@ $(document).ready(function(){
 			for (i = 0; i < dataItems.length; i++){
 				
 				document.getElementByClass('timeCode').innerHTML = (data.items[i].contentDetails.duration);
+				$("p:eq(i)").text(data.items[i].contentDetails.duration);
 			};//為什麼這裡不能這樣寫?
 
     			// v.text([1]);
