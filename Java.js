@@ -26,15 +26,14 @@ $(document).ready(function(){
     	// 	console.log(gender);
     	
     		var dataItems = data.items;
-    		[i] = Array();
-    		
+    		//var myTimeCode = JOSN.parse(data);
+    		   		
     		for( i = 0; i < dataItems.length; i++){
     		
 	    		//data.items[i] = i;
-	    		//var timeCode = (data.items[i].contentDetails.duration);
-				alert(data.items[i].contentDetails.duration);
-				//$('.timeCode').text(dataItems[i].contentDetails.duration);
-				
+	    		var timeCode = (data.items[i].contentDetails.duration);
+				console.log(data.items[i].contentDetails.duration);
+				var myTimeCode = JSON.parse(this[i].contentDetails.duration);
 				// $('.timeCode').text(data.items[0].contentDetails.duration);
 				// $('.timeCode').text(data.items[1].contentDetails.duration);
 				// $('.timeCode').text(data.items[2].contentDetails.duration);
@@ -50,11 +49,11 @@ $(document).ready(function(){
 				// $('.timeCode').text(data.items[12].contentDetails.duration);
 			
 			};
-			for (i = 0; i < dataItems.length; i++){
+			//for (i = 0; i < dataItems.length; i++){
 				
-				document.getElementByClass('timeCode').innerHTML = (data.items[i].contentDetails.duration);
-				$("p:eq(i)").text(data.items[i].contentDetails.duration);
-			};//為什麼這裡不能這樣寫?
+				//document.getElementByClass('timeCode').innerHTML = (data.items[i].contentDetails.duration);
+				//$('timeCode').text(myTimeCode);
+			//};		//為什麼這裡不能這樣寫?
 
     			// v.text([1]);
     			// v[2];
